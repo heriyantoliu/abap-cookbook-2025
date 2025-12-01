@@ -1,0 +1,95 @@
+@Metadata.layer: #CORE
+
+@UI.headerInfo: { typeName: 'Mass Change',
+                  typeNamePlural: 'Mass Changes',
+                  title: { value: 'ChangeTitle', type: #STANDARD },
+                  description: { label: 'UUID', value: 'MassChangeUUID', type: #STANDARD } }
+
+annotate view ZACB_C_MassChange with
+
+{
+  @UI.facet: [ { id: 'idIdentification', type: #IDENTIFICATION_REFERENCE, label: 'Mass Change', position: 10 },
+               { id: 'files',
+                 purpose: #STANDARD,
+                 type: #COLLECTION,
+                 label: 'Files',
+                 position: 20,
+                 targetQualifier: 'filesGroup' } ]
+  @UI.identification: [ { position: 10, label: '' },
+                        { type: #FOR_ACTION, dataAction: 'processFile', label: 'Process file' } ]
+  @UI.lineItem: [ { position: 10, importance: #HIGH, label: '' },
+                  { type: #FOR_ACTION, dataAction: 'processFile', label: 'Process file' } ]
+  MassChangeUUID;
+
+  @UI.identification: [ { position: 20 } ]
+  @UI.lineItem: [ { position: 20, importance: #HIGH } ]
+  ChangeTitle;
+
+  @UI.facet: [
+    {
+      purpose: #STANDARD, // or #STANDARD
+      label      : 'Template',
+      type       : #FIELDGROUP_REFERENCE,
+      targetQualifier: 'templateFile',
+      parentId: 'files',
+      position: 30
+    }
+  ]
+  @UI:
+  { fieldGroup: [
+      { position: 10, qualifier: 'templateFile', label: 'Template' },
+      { position: 20, label: 'Generate template', type: #FOR_ACTION, dataAction: 'generateTemplate', inline: true, qualifier: 'templateFile', emphasized: true, importance: #HIGH } ] }
+  TemplateFileContent;
+
+  @UI.hidden: true
+  TemplateFileMimetype;
+
+  @UI.hidden: true
+  TemplateFilename;
+
+  @UI.facet: [
+    {
+      purpose: #STANDARD, // or #STANDARD
+      label      : 'Processing file',
+      type       : #FIELDGROUP_REFERENCE,
+      targetQualifier: 'processingFile',
+      parentId: 'files',
+      position: 40
+    }
+  ]
+  @UI:
+  { fieldGroup: [ { position: 10, qualifier: 'processingFile', label: 'Processing file' } ] }
+  ProcessingFileContent;
+
+  @UI.hidden: true
+  ProcessingFileMimetype;
+
+  @UI.hidden: true
+  ProcessingFilename;
+
+  @UI.identification: [ { position: 60, label: '' } ]
+  @UI.lineItem: [ { position: 60, importance: #MEDIUM, label: '' } ]
+  @UI.multiLineText: true
+  ChangeDescription;
+
+  @UI.identification: [ { position: 70, label: '' } ]
+  @UI.lineItem: [ { position: 70, importance: #MEDIUM, label: '' } ]
+  ProcessingStatus;
+
+  @UI.identification: [ { position: 80, label: '' } ]
+  @UI.lineItem: [ { position: 80, importance: #MEDIUM, label: '' } ]
+  localcreatedat;
+
+  @UI.identification: [ { position: 90, label: '' } ]
+  @UI.lineItem: [ { position: 90, importance: #MEDIUM, label: '' } ]
+  localcreatedby;
+
+  @UI.hidden: true
+  LocalLastChangedAt;
+
+  @UI.lineItem: [ { position: 100, importance: #MEDIUM, label: 'Template file exists' } ]
+  TemplateFileExists;
+
+  @UI.lineItem: [ { position: 110, importance: #MEDIUM, label: 'Processing file exists' } ]
+  ProcessingFileExists;
+}

@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_SKTD" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <SKTD>
+    <METADATA>
+     <DESCRIPTION>Documentation for ZACB_LABEL</DESCRIPTION>
+     <LANGUAGE>EN</LANGUAGE>
+     <ABAP_LANGU_VERSION>5</ABAP_LANGU_VERSION>
+    </METADATA>
+    <REF_OBJECT>
+     <TYPE>SMBC/TYP</TYPE>
+     <NAME>ZACB_LABEL</NAME>
+    </REF_OBJECT>
+    <ELEMENTS>
+     <item>
+      <ID>ZACB_LABEL</ID>
+      <REF>
+       <URI>/sap/bc/adt/bct/smbctyp/zacb_label</URI>
+       <TYPE>SMBC/TYP</TYPE>
+       <NAME>ZACB_LABEL</NAME>
+       <DESCRIPTION>Maintain Labels</DESCRIPTION>
+      </REF>
+      <TEXT>IyBNYWludGVuYW5jZSBvZiBMYWJlbHMKCkxhYmVscyBhcmUgdXNlZCBpbiB0aGUgcmVjaXBlIHBv
+cnRhbCB0byBhc3NpZ24gc3BlY2lmaWMgY2F0ZWdvcmllcyB0byBlYWNoIHJlY2lwZSwgc3VjaCBh
+cyBfdmVnYW5fIG9yIF9mYXN0IGRpc2hfLiBVc2VycyBjYW4gc2VhcmNoIGZvciBhbmQgZmlsdGVy
+IHJlY2lwZXMgdXNpbmcgdGhlc2UgbGFiZWxzLgoKIyMgQXR0cmlidXRlcyBvZiBhIExhYmVsCgpB
+IGxhYmVsIGhhcyB0aGUgZm9sbG93aW5nIGF0dHJpYnV0ZXM6Cgp8IEF0dHJpYnV0ZSB8IFVzYWdl
+IHwKfC0tLS0tLS0tLS0tfC0tLS0tLS0tLS0tLXwKfCBfX0xhYmVsIElEX18gfCBUZWNobmljYWwg
+a2V5OyBzaG91bGQgYmUgaW4gRW5nbGlzaCBhbmQgd3JpdHRlbiBpbiB1cHBlcmNhc2UgbGV0dGVy
+cyB8CnwgX19MYWJlbCBUZXh0X18gfCBMYW5ndWFnZS1zcGVjaWZpYyBkZXNjcmlwdGlvbiBvZiB0
+aGUgbGFiZWwgfAp8IF9fTGFiZWwgQ29sb3JfXyB8IENvbG9yIGNvZGUgZm9yIHZpc3VhbGl6YXRp
+b24gaW4gdGhlIGFwcGxpY2F0aW9uIChzZWUgdGhlIGxpc3Qgb2YgY29sb3JzKSB8CgpBZGRpdGlv
+bmFsbHksIGxhYmVscyBjYW4gYmUgbWFya2VkIGFzIGRlcHJlY2F0ZWQgaWYgbmVjZXNzYXJ5LgoK
+IyMgQ29sb3JzCgpUaGUgZm9sbG93aW5nIGNvbG9ycyBhcmUgYXZhaWxhYmxlOgoKfCBDb2xvciB8
+IERlc2NyaXB0aW9uICAgfAp8LS0tLS0tLXwtLS0tLS0tLS0tLS0tLS18CnwgYDBgICAgfCBCbGFj
+ayAgICAgICAgIHwKfCBgMWAgICB8IFJlZCAgICAgICAgICAgfAp8IGAyYCAgIHwgWWVsbG93ICAg
+ICAgICB8CnwgYDNgICAgfCBHcmVlbiAgICAgICAgIHw=</TEXT>
+      <CAN_HAVE_DOCUMENTATION>X</CAN_HAVE_DOCUMENTATION>
+      <SHORTTEXT_OBLIGATION>forbidden</SHORTTEXT_OBLIGATION>
+      <LONGTEXT_OBLIGATION>optional</LONGTEXT_OBLIGATION>
+     </item>
+    </ELEMENTS>
+   </SKTD>
+  </asx:values>
+ </asx:abap>
+</abapGit>
